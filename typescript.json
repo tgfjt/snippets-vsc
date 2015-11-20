@@ -1,0 +1,68 @@
+{
+    "Print to console": {
+        "prefix": "log",
+        "body": [
+            "console.log('$1');",
+            "$2"
+        ],
+        "description": "Log output to console"
+    },
+    "Print Dir to console": {
+        "prefix": "dir",
+        "body": [
+            "console.dir('$1');",
+            "$2"
+        ],
+        "description": "dir output to console"
+    },
+    "function": {
+        "prefix": "func",
+        "body": [
+            "function ${1:name}(${2:argument}) {",
+            "    $2",
+            "}"
+        ],
+        "description": "function"
+    },
+    "arrow function": {
+        "prefix": "afun",
+        "body": [
+            "(${1:argument}) => {",
+            "    $2",
+            "}"
+        ],
+        "description": "arrow function"
+    },
+    "interface": {
+        "prefix": "inte",
+        "body": [
+            "interface ${1:name} {",
+            "    $2",
+            "}"
+        ],
+        "description": "interface"
+    },
+    "namespace": {
+        "prefix": "nam",
+        "body": [
+            "namespace ${1:name} {",
+            "    $2",
+            "}"
+        ],
+        "description": "namespace"
+    },
+    "settimeout": {
+        "prefix": "sto",
+        "body": [
+            "setTimeout(() => {$0}${2:}, ${1:500});"
+        ],
+        "description": "setTimeout function"
+    },
+    "reference": {
+        "prefix": "ref",
+        "body": [
+            "/// <reference path=\"${1:ref_path}\" />"
+        ],
+        "description": "add reference comment"
+    }
+}

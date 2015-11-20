@@ -1,0 +1,10 @@
+{
+    "Print": {
+        "prefix": "pr",
+        "body": [
+            "print_r('$1');",
+            "$2"
+        ],
+        "description": "Print out anything"
+    }
+}
